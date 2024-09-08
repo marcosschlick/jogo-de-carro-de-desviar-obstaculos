@@ -30,7 +30,7 @@ public class Car extends JPanel {
 
 	public void moveLeft() {
 
-			setLocation(this.getX() + 15, this.getY());
+			setLocation(this.getX() - 15, this.getY());
 			repaint();
 			
 		

@@ -15,7 +15,6 @@ import javax.swing.JPanel;
 public class RaceScreen extends JFrame {
 
     private JPanel contentPane;
-    private BufferStrategy bufferStrategy;
     Timer timer = new Timer();
 
     Car car = new Car();
@@ -33,9 +32,7 @@ public class RaceScreen extends JFrame {
         contentPane.add(car);
         addKeyListener(keyadapt);
         createBufferStrategy(2);
-        bufferStrategy = getBufferStrategy();
         newObs();
-        startRendering();
     }
 
     public void newObs() {
@@ -63,26 +60,5 @@ public class RaceScreen extends JFrame {
         }
     };
 
-    private void startRendering() {
-        while (true) {
-            render();
-            try {
-                Thread.sleep(16); // Aproximadamente 60 FPS
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
-    private void render() {
-        Graphics g = bufferStrategy.getDrawGraphics();
-        g.clearRect(0, 0, getWidth(), getHeight());
-        contentPane.paint(g);
-        g.dispose();
-        bufferStrategy.show();
-    }
-
-    public static void main(String[] args) {
-        new RaceScreen();
-    }
 }
