@@ -66,9 +66,9 @@ public class Obstacle extends JPanel {
 	private static String getURL(int num) {
 		switch (num) {
 		case 0:
-			return "C:\\Users\\marcos\\eclipse-workspaces\\eclipse-workspace\\jogo-de-corrida\\src\\game/big rock.png";
+			return "C:\\Users\\marcos\\eclipse-workspaces\\eclipse-workspace\\jogo-de-carro-de-desviar-obstaculos\\src\\game/big rock.png";
 		default:
-			return "C:\\Users\\marcos\\eclipse-workspaces\\eclipse-workspace\\jogo-de-corrida\\src\\game/small rock.png";
+			return "C:\\Users\\marcos\\eclipse-workspaces\\eclipse-workspace\\jogo-de-carro-de-desviar-obstaculos\\src\\game/small rock.png";
 		}
 	}
 }
