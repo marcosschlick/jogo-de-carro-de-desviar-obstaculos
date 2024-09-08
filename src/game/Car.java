@@ -21,13 +21,19 @@ public class Car extends JPanel {
 	}
 
 	public void moveRight() {
-		setLocation(this.getX() + 15, this.getY());
-		repaint();
+	
+			setLocation(this.getX() + 15, this.getY());
+			repaint();
+			
+		
 	}
 
 	public void moveLeft() {
-		setLocation(this.getX() - 10, this.getY());
-		repaint();
+
+			setLocation(this.getX() + 15, this.getY());
+			repaint();
+			
+		
 	}
 
 	public void checkCollision(int obstacleX, int obstacleY, int obstacleWidth, int obstacleHeight) {
